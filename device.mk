@@ -23,5 +23,10 @@ $(call inherit-product, vendor/samsung/gta4xlwifi/gta4xlwifi-vendor.mk)
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 
+ifneq ($(WITH_GMS),true)
+## Gapps
+include vendor/gapps/arm64/arm64-vendor.mk
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay

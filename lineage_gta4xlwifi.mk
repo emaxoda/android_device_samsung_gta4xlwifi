@@ -34,7 +34,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 ## Device identifier, this must come after all inclusions
 PRODUCT_DEVICE := gta4xlwifi
-PRODUCT_NAME := lineage_gta4xlwifi
+PRODUCT_NAME := gta4xlwifi
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-P610
 PRODUCT_MANUFACTURER := samsung
