@@ -21,7 +21,7 @@ include vendor/samsung/gta4xlwifi/BoardConfigVendor.mk
 
 DEVICE_PATH := device/samsung/gta4xlwifi
 
-ifneq ($(WITH_GMS),true)
+ifeq ($(WITH_GMS),true)
 ## Gapps EFL fix
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 endif
